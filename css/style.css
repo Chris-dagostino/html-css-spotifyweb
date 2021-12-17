@@ -96,10 +96,9 @@ section .header {
 /*content*/
 
 section .content {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    height: 100vh;
-    margin-top: 100px;
+    margin: 100px 20px;
 }
 
 section .content .menu {
@@ -157,4 +156,7 @@ footer .center {
 
 /*fine Footer*/
 
+@media screen and (min-width: 576px) {
 
+    
+}
