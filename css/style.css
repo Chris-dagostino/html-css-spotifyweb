@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 /*regole generali*/
+
+body {
+    font-family: sans-serif;
+}
+
 .flex {
     display: flex;
 }
@@ -13,7 +18,7 @@
     align-items: flex-end;
 }
 
-.flex-column {
+.column {
     flex-direction: column;
 }
 
@@ -25,9 +30,21 @@
     justify-content: space-between;
 }
 
+.flex-space-ard {
+    justify-content: space-around;
+}
+
+.center-X {
+    justify-content: center;
+}
+
+.center-Y {
+    align-items: center;
+}
 
 
-/*regole generali*/
+
+/*fine regole generali*/
 
 
 main{
@@ -46,19 +63,18 @@ aside {
 
 aside .nav .logo {
     width: 100%;
-    height: 100px;
-    background-color: violet;
 }
 
 aside .nav {
     width: 100%;
-    height: 100px;
-    background-color: rgb(130, 238, 153);
 }
 aside .nav .space {
     margin-bottom: 20px;
 } 
 
+.container-icon {
+    width: 30px;
+}
 
 
 /*fine Aside*/
@@ -91,36 +107,28 @@ section .header {
     border-radius: 25px;
     padding: 10px 30px;
 }
-/*section header*/
+/*fine section header*/
 
 /*content*/
 
 section .content {
     width: 100%;
     margin: auto;
-    margin: 100px 20px;
+    padding: 100px 20px;
+    color: white;
 }
 
 section .content .menu {
-    width: 70%;
     margin: 10px auto;
-    height: 20px;
-    background-color: tomato;
 }
 
-section .content .nav {
-    width: 100%;
-    margin: 10px auto;
-    height: 200px;
-    background-color: tomato;
-}
+section .content .menu ul li {
+    list-style-type: none ;
+    padding: 0px 20px 30px 20px;
 
-section .content .title span {
-    color: white;
 }
 
 section h2 {
-    color: white;
     margin: 20px 0px;
 }
 
@@ -129,9 +137,15 @@ section h2 {
     height: 220px;
     background-color: rgb(28, 173, 240);
     margin: 10px 10px 10px 0px;
+} 
+
+section img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
 }
 
-/*content*/
+/*fine content*/
 
 /*fine Section*/
 
@@ -142,21 +156,43 @@ footer {
     width: 100%;
     height: 100px;
     background-color: #282828 ;
+    color: white;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 footer .left , footer .right {
     width: 20%;
-    background-color: tomato;
+}
+
+footer .left .col-left , footer .left .col-right {
+    width: 25%;
+}
+
+footer .left .col-center {
+    width: 50%;
 }
 
 footer .center {
     width: 60%;
-    background-color: yellow;
 }
+
+footer .center .up , footer .center .down {
+    padding: 10px;
+}
+
 
 /*fine Footer*/
 
+
+/*Screen DESKTOP*/
 @media screen and (min-width: 576px) {
 
     
 }
+
+/*fine screen DESKTOP*/

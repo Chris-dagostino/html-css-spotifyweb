@@ -6,34 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body >
 
     <main class="flex" >
 
-        <aside class="flex flex-column flex-space-btw" >
+        <aside class="flex column flex-space-btw" >
             <div class="nav nav-up" >
-                <div class="nav space logo" >
-    
+                <div class="nav space logo flex center-X center-Y" >
+                    <div class="container-icon" >
+                        <img src="img/logo-small.svg" alt="">              
+                    </div>    
                 </div>
     
-                <div class="nav space nav-1" >
-    
+                <div class="nav space nav-1 flex center-X center-Y column" >
+                    <div class="container-icon" >
+                        <img src="img/home.svg" alt="">              
+                    </div>
+                    <div class="container-icon" >
+                        <img src="img/search.svg" alt="">              
+                    </div>
+                    <div class="container-icon" >
+                        <img src="img/libreria.svg" alt="">              
+                    </div>    
                 </div>
     
-                <div class="nav space nav-2" >
-    
-                </div>
+            
             </div>
 
-            <div class="nav nav-down" >                
+            <div class="nav nav-down flex center-X center-Y column" > 
+                <div class="container-icon" >
+                    <img src="img/download.svg" alt="">              
+                </div>
+                <div class="container-icon circle" >
+                    <img src="img/profile.svg" alt="">
+
+                </div>
 
             </div>
 
         </aside>
 
-        <section class="flex flex-column" >
+        <section class="flex column" >
             <div class="header flex" >
                 <div class="upgrade flex" >
                     <span class="flex" >EFFETTUA L'UPGRADE</span> 
@@ -41,8 +57,16 @@
 
             </div>
 
-            <div class="content flex flex-column" >
+            <div class="content flex wrap column" >
                 <div class="menu flex" >
+                    <ul class="flex wrap center-X center-Y" >
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
+                    </ul>
 
                 </div>
                 
@@ -50,23 +74,41 @@
                     <h2>Recently played</h2>
                 </div>
                 <div class="flex wrap" >
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <img src="img/metal_lifting.jpg" alt="song">
+
+                        <h3 class="song-title" >Heavy Metal</h3>
+                        <span class="artist" >Subtitle</span>    
                     </div>
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <!--immmagine-->
+
+                        <h3 class="song-title" >Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                        <span class="artist" >Kyle Dixon & Michael Stein</span>    
                     </div>
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <img src="img/aquietplace.jpeg" alt="">                        
+
+                        <h3 class="song-title" >A quiet place</h3>
+                        <span class="artist" >Subtitle</span>    
                     </div>
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <img src="img/split.jpeg" alt="">                        
+
+                        <h3 class="song-title" >Split</h3>
+                        <span class="artist" >Subtitle</span>    
                     </div>
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <img src="img/cure.jpeg" alt="">
+
+                        <h3 class="song-title" >A cure for Wellness</h3>
+                        <span class="artist" >Subtitle</span>    
                     </div>
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <img src="img/sinister.jpeg" alt="">
+
+                        <h3 class="song-title" >Sinister</h3>
+                        <span class="artist" >Subtitle</span>    
                     </div>
 
                 </div>
@@ -76,11 +118,15 @@
                     <span>Più ascolti, più accurati saranno i suggerimenti</span>
                 </div>
                 <div class="flex wrap" >
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <img src="img/radar.jpeg" alt="">
+                        
+                        <h3 class="song-title" >Release Radar</h3>    
                     </div>
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <img src="img/mixdaily.jpeg" alt="">
+
+                        <h3 class="song-title" >Daily Mix 1</h3>    
                     </div>
 
                 </div>
@@ -90,11 +136,15 @@
                     <span>Più ascolti, più accurati saranno i suggerimenti</span>
                 </div>
                 <div class="flex wrap" >
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <img src="img/youg.jpeg" alt="">
+
+                        <h3 class="song-title" >Lana Del Ray</h3>    
                     </div>
-                    <div class="item" >
-    
+                    <div class="item flex column center-Y" >
+                        <img src="img/einaudi.jpeg" alt="">
+
+                        <h3 class="song-title" >Ludovico Einaudi</h3>    
                     </div>
 
                 </div>
@@ -111,16 +161,44 @@
 
     <footer class="flex" >
 
-        <div class="left" >
+        <div class="left flex center-Y" >
+            <div class="col col-left flex" >
+                <img src="img/sinister.jpeg" alt="">
+            </div>
+            <div class="col col-center" >
+                <h3 class="song-title" >Sinister</h3>
+                <span class="artist" >Brano nome</span>
+            </div>
+            <div class="col col-right flex flex-space-ard column" >
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+
             
         </div>
 
-        <div class="center" >
+        <div class="center flex center-Y center-X column" >
+            <div class="up flex center-X" >
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-undo-alt"></i>
+            </div>
+            <div class="down flex center-X" >
+                <span>0:25</span>
+                <!--volume-->
+                <span>4:35</span>
+            </div>
             
         </div>
 
-        <div class="right" > 
-            
+        <div class="right flex center-Y flex-space-ard" > 
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <!--volume-->
+
         </div>
 
     </footer>
