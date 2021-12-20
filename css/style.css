@@ -60,22 +60,30 @@ aside {
     z-index:2;
     left: 0;
     top: 0;
-    bottom: 100px;    
+    bottom: 60px;
 }
 
 aside .nav .logo {
     width: 100%;
+    margin-top: 20px;
 }
 
 aside .nav {
     width: 100%;
 }
+
 aside .nav .space {
     margin-bottom: 20px;
 } 
 
 .container-icon {
     width: 30px;
+}
+
+.circle {
+    background-color: #808080;
+    border-radius: 25px;
+    padding: 5px;
 }
 
 
@@ -136,9 +144,17 @@ section h2 {
 
 .item {
     width: 100px;
-    height: 160px;
+    height: 180px;
     margin: 10px 10px 10px 0px;
 } 
+
+section .description {
+    text-align:center
+}
+
+.description span {
+    color: grey;
+}
 
 section img {
     width: 100px;
@@ -154,64 +170,116 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    height: 100px;
+    height: 60px;
     background-color: #282828 ;
     color: white;
+    font-size: 10px;
 }
 
 footer img {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     object-fit: contain;
+}
+
+footer .col {
+    margin-right: 8px;
 }
 
 footer .left , footer .right {
     width: 20%;
 }
 
-footer .left .col-left , footer .left .col-right {
-    width: 25%;
-}
-
-footer .left .col-center {
-    width: 50%;
-}
-
 footer .center {
-    width: 60%;
+    width: 40%;
 }
 
 footer .center .up , footer .center .down {
     padding: 10px;
 }
 
+footer .center .up {
+    width: 100%;
+    justify-content: space-around;
+}
+
 footer .row-time {
-    width: 400px;
+    width: 90px;
+    height: 5px;
     background-color: aqua;
     border-radius: 25px;
-    padding: 2px ;
+    margin: 0px 5px;
 }
 
 footer .row-volume {
-    width: 50px;
+    width: 30px;
+    height: 5px;
     background-color: aqua;
     border-radius: 25px;
     padding: 2px;
-}
-
-footer .row-volume .volume {
-    width: 100px;
-    background-color: white;
-    border-radius: 25px;
+    margin-left: 3px;
 }
 
 
 /*fine Footer*/
 
 
-/*Screen DESKTOP*/
-@media screen and (min-width: 320px) {
+/*Screen TABLET*/
+@media screen and (min-width: 425px) {
+    
+    body {
+        font-size: 11px;
+    }
 
+    aside {
+        width: 120px;
+    }
+
+    section {
+        margin-left: 120px;    
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .center .up {
+        width: 80%;
+    }
+
+    footer .row-time {
+        width: 130px;
+    }
+    
+}
+
+/*fine screen TABLET*/
+
+/*Screen DESKTOP*/
+@media screen and (min-width: 768px) {
+
+    aside {
+        width: 180px;
+    }
+
+
+    section {
+        margin-left: 180px;    
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .center .up {
+        width: 60%;
+    }
+
+    footer .row-time {
+        width: 350px;
+    }
     
 }
 
