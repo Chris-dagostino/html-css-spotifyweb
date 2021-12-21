@@ -47,7 +47,13 @@ main{
     align-items: center;
 }
 
+.grey {
+    color: grey;
+}
 
+.desk {
+    display: none;
+}
 
 /*fine regole generali*/
 
@@ -63,21 +69,54 @@ aside {
     bottom: 60px;
 }
 
-aside .nav .logo {
+aside .nav .logo .mobile{
     width: 100%;
-    margin-top: 20px;
 }
 
 aside .nav {
     width: 100%;
+    padding: 8px ;
 }
 
-aside .nav .space {
-    margin-bottom: 20px;
+.space {
+    margin: 10px 0px;
 } 
+
+aside .nav-2 {
+    display: none;
+}
 
 .container-icon {
     width: 30px;
+}
+
+aside .nav-2 ul {
+    list-style-type: none;
+}
+
+aside .nav-2 ul li {
+    padding: 10px 0px;
+}
+
+aside .nav-2 li a {
+    text-decoration: none;
+    color: gray;
+} 
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    text-align: center;
+    font-size: 20px;
+    padding: 4px;
+    margin-right: 10px;
+    color: black;
+}
+
+.hr {
+    border-bottom: 1px solid #808080;
+    margin: 10px;
 }
 
 .circle {
@@ -143,8 +182,8 @@ section h2 {
 }
 
 .item {
-    width: 100px;
-    height: 180px;
+    width: 120px;
+    height: 200px;
     margin: 10px 10px 10px 0px;
 } 
 
@@ -157,8 +196,12 @@ section .description {
 }
 
 section img {
-    width: 100px;
+    width: 120px;
     object-fit: contain;
+}
+
+.around img{
+    border-radius: 50%;
 }
 
 /*fine content*/
@@ -231,14 +274,33 @@ footer .row-volume {
         font-size: 11px;
     }
 
+    .desk {
+        display: block;
+    }
+
     aside {
         width: 120px;
+        color: white;
+    }
+
+    aside .nav .logo .mobile{
+        display: none;
+    }
+    
+    aside .nav .logo .desk {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
     }
 
     section {
         margin-left: 120px;    
     }
 
+    aside .nav-2 {
+        display: block;
+    }
+    
     footer img {
         width: 30px;
         height: 30px;
@@ -263,9 +325,17 @@ footer .row-volume {
         width: 180px;
     }
 
-
     section {
         margin-left: 180px;    
+    }
+
+    .item {
+        width: 150px;
+        height: 220px;
+    } 
+
+    section img {
+        width: 150px;
     }
 
     footer img {

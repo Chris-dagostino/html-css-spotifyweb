@@ -15,22 +15,67 @@
 
         <aside class="flex column flex-space-btw" >
             <div class="nav nav-up" >
-                <div class="nav space logo flex center-X center-Y" >
+                <div class="nav space logo flex center-Y" >
                     <div class="container-icon" >
-                        <img src="img/logo-small.svg" alt="">              
+                        <img  class="mobile" src="img/logo-small.svg" alt=""> 
+                        <img  class="desk" src="img/logo.svg" alt="">             
                     </div>    
                 </div>
     
-                <div class="nav space nav-1 flex center-X center-Y column" >
-                    <div class="container-icon" >
-                        <img src="img/home.svg" alt="">              
+                <div class="nav space nav-1 flexcenter-Y column" >
+                    <div class="container-icon flex center-Y" >
+                        <img src="img/home.svg" alt=""> 
+                        <div class="desk grey" >
+                            Home
+                        </div>              
                     </div>
-                    <div class="container-icon" >
-                        <img src="img/search.svg" alt="">              
+                    <div class="container-icon flex center-Y" >
+                        <img src="img/search.svg" alt=""> 
+                        <div class="desk grey" >
+                            Cerca
+                        </div>             
                     </div>
-                    <div class="container-icon" >
-                        <img src="img/libreria.svg" alt="">              
+                    <div class="container-icon flex center-Y" >
+                        <img src="img/libreria.svg" alt="">
+                        <div class="desk grey" >
+                            La tua libreria
+                        </div>               
                     </div>    
+                </div>
+
+                <div class="nav nav-2 space  flex column" >
+                    <h3>PLAYLIST</h3>
+                    <div class="flex center-Y space" >
+                        <div class="square" >+</div>
+                        <div class="grey" >Crea Playlist</div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
                 </div>
 
 
@@ -38,9 +83,12 @@
             
             </div>
 
-            <div class="nav nav-down flex center-X center-Y column" > 
-                <div class="container-icon" >
-                    <img src="img/download.svg" alt="">              
+            <div class="nav nav-down flexcenter-Y column" > 
+                <div class="container-icon flex center-Y hr" >
+                    <img src="img/download.svg" alt="">
+                    <div class="desk grey" >
+                        Installa app
+                    </div>              
                 </div>
                 <div class="container-icon circle" >
                     <img src="img/profile.svg" alt="">
@@ -124,7 +172,7 @@
 
                 <div class="title creat-jhon" >
                     <h2>Creato per Jhon Doe</h2>
-                    <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                    <span class="grey" >Più ascolti, più accurati saranno i suggerimenti</span>
                 </div>
                 <div class="flex wrap" >
                     <div class="item flex column center-Y" >
@@ -142,18 +190,18 @@
 
                 <div class="title popolar" >
                     <h2>Artisti più popolari</h2>
-                    <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                    <span class="grey" >Più ascolti, più accurati saranno i suggerimenti</span>
                 </div>
                 <div class="flex wrap" >
-                    <div class="item flex column center-Y" >
+                    <div class="item flex column center-Y around" >
                         <img src="img/youg.jpeg" alt="">
 
-                        <h3 class="song-title" >Lana Del Ray</h3>    
+                        <h3 class="song-title description" >Lana Del Ray</h3>    
                     </div>
-                    <div class="item flex column center-Y" >
+                    <div class="item flex column center-Y around" >
                         <img src="img/einaudi.jpeg" alt="">
 
-                        <h3 class="song-title" >Ludovico Einaudi</h3>    
+                        <h3 class="song-title description" >Ludovico Einaudi</h3>    
                     </div>
 
                 </div>
@@ -176,7 +224,7 @@
             </div>
             <div class="col col-center" >
                 <h3 class="song-title" >Sinister</h3>
-                <span class="artist" >Brano nome</span>
+                <span class="artist grey" >Brano nome</span>
             </div>
             <div class="col col-right flex flex-space-ard column" >
                 <i class="far fa-heart"></i>
