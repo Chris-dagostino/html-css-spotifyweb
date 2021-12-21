@@ -51,8 +51,16 @@ main{
     color: grey;
 }
 
+.white {
+    color: white;
+}
+
 .desk {
     display: none;
+}
+
+.margin-L {
+    margin-left: 5px;
 }
 
 /*fine regole generali*/
@@ -69,7 +77,20 @@ aside {
     bottom: 60px;
 }
 
+.nav-up {
+    height: calc(100% -90px);
+    overflow-y: hidden;
+}
+
+.nav-down {
+    height: 90px;
+}
+
 aside .nav .logo .mobile{
+    width: 100%;
+}
+
+.container-logo {
     width: 100%;
 }
 
@@ -114,9 +135,16 @@ aside .nav-2 li a {
     color: black;
 }
 
+.container-icon .hr {
+    width: 100%;
+}
+
+.container-icon .hr img {
+    margin-right: ;
+}
+
 .hr {
     border-bottom: 1px solid #808080;
-    margin: 10px;
 }
 
 .circle {
@@ -290,7 +318,6 @@ footer .row-volume {
     aside .nav .logo .desk {
         display: block;
         width: 100%;
-        margin-top: 20px;
     }
 
     section {
