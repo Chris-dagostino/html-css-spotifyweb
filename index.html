@@ -23,21 +23,21 @@
                 </div>
     
                 <div class="nav space nav-1 flexcenter-Y column" >
-                    <div class="container-icon flex center-Y" >
-                        <img src="img/home.svg" alt=""> 
-                        <div class="desk grey" >
+                    <div class="container flex center-Y" >
+                        <img class="container-icon active" src="img/home.svg" alt=""> 
+                        <div class="desk grey margin-L" >
                             Home
                         </div>              
                     </div>
-                    <div class="container-icon flex center-Y" >
-                        <img src="img/search.svg" alt=""> 
-                        <div class="desk grey" >
+                    <div class="container flex center-Y" >
+                        <img class="container-icon" src="img/search.svg" alt=""> 
+                        <div class="desk grey margin-L" >
                             Cerca
                         </div>             
                     </div>
-                    <div class="container-icon flex center-Y" >
-                        <img src="img/libreria.svg" alt="">
-                        <div class="desk grey" >
+                    <div class="container flex center-Y" >
+                        <img class="container-icon" src="img/libreria.svg" alt="">
+                        <div class="desk grey margin-L" >
                             La tua libreria
                         </div>               
                     </div>    
@@ -49,8 +49,8 @@
                         <div class="square" >+</div>
                         <div class="grey" >Crea Playlist</div>
                     </div>
-                    <div>
-                        <ul>
+                    <div >
+                        <ul class="scroll" >
                             <li>
                                 <a href="#">Nome Playlist</a>
                             </li>
@@ -84,12 +84,12 @@
             </div>
 
             <div class="nav nav-down flex column" > 
-                <div class="container-icon flex center-Y hr" >
-                    <img src="img/download.svg" alt="">
-                    <div class="desk grey margin-L" >
-                        Installa app
-                    </div>              
-                </div>
+                    <div class="container container-hr flex center-Y" >
+                        <img class="container-icon" src="img/download.svg" alt="">
+                        <div class="desk grey margin-L" >
+                            Installa app
+                        </div>              
+                    </div>
                 <div class="flex center-Y space" >
                     <div class="container-icon circle" >
                         <img src="img/profile.svg" alt="">                    
@@ -114,12 +114,24 @@
             <div class="content flex wrap column" >
                 <div class="menu flex" >
                     <ul class="flex wrap center-X center-Y" >
-                        <li>IN EVIDENZA</li>
-                        <li>PODCAST</li>
-                        <li>CLASSIFICHE</li>
-                        <li>GENERI E MOOD</li>
-                        <li>NUOVE USCITE</li>
-                        <li>SCOPRI</li>
+                        <li>
+                            <a class="active" href="#">IN EVIDENZA</a> 
+                        </li>
+                        <li>
+                            <a href="#">PODCAST</a> 
+                        </li>
+                        <li>
+                            <a href="#">CLASSIFICHE</a> 
+                        </li>
+                        <li>
+                            <a href="#">GENERI E MOOD</a> 
+                        </li>
+                        <li>
+                            <a href="#">NUOVE USCITE</a> 
+                        </li>
+                        <li>
+                            <a href="#">SCOPRI</a> 
+                        </li>
                     </ul>
 
                 </div>
@@ -129,7 +141,7 @@
                 </div>
                 <div class="flex wrap" >
                     <div class="item flex column center-Y" >
-                        <img src="img/metal_lifting.jpg" alt="song">
+                            <img src="img/metal_lifting.jpg" alt="song">                        
                         <div class="description" >
                             <h3 class="song-title" >Heavy Metal</h3>
                             <span class="artist" >Subtitle</span>   
@@ -220,7 +232,7 @@
 
     </main>
 
-    <footer class="flex flex-space-ard" >
+    <footer class="flex flex-space-btw" >
 
         <div class="left flex center-Y flex-space-ard" >
             <div class="col col-left flex" >
@@ -239,8 +251,8 @@
         </div>
 
         <div class="center flex center-Y center-X column" >
-            <div class="up flex center-X" >                
-                <i class="fas fa-random"></i>                
+            <div class="up flex center-X" >   
+                <i class="fas fa-random"></i>                             
                 <i class="fas fa-step-backward"></i>
                 <i class="far fa-play-circle"></i>
                 <i class="fas fa-step-forward"></i>

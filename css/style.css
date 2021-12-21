@@ -63,6 +63,7 @@ main{
     margin-left: 5px;
 }
 
+
 /*fine regole generali*/
 
 
@@ -77,9 +78,14 @@ aside {
     bottom: 60px;
 }
 
+.scroll {
+    overflow-y: auto;
+}
+
 .nav-up {
     height: calc(100% -90px);
     overflow-y: hidden;
+    min-height: 380px;
 }
 
 .nav-down {
@@ -99,12 +105,21 @@ aside .nav {
     padding: 8px ;
 }
 
+aside .active {
+    border-left: 2px solid #94dd25;
+}
+
 .space {
     margin: 10px 0px;
 } 
 
 aside .nav-2 {
     display: none;
+    overflow-y: hidden;
+}
+
+.container {
+    width: 100%;
 }
 
 .container-icon {
@@ -124,6 +139,10 @@ aside .nav-2 li a {
     color: gray;
 } 
 
+aside .nav-2 li a:hover{
+    color: white;
+}
+
 .square {
     width: 30px;
     height: 30px;
@@ -135,16 +154,12 @@ aside .nav-2 li a {
     color: black;
 }
 
-.container-icon .hr {
-    width: 100%;
+aside img {
+    color: grey
 }
 
 .container-icon .hr img {
     margin-right: ;
-}
-
-.hr {
-    border-bottom: 1px solid #808080;
 }
 
 .circle {
@@ -205,6 +220,27 @@ section .content .menu ul li {
     padding: 10px 10px;
 }
 
+section .content .menu ul li a {
+    color: grey;
+    text-decoration: none;
+    position: relative;
+}
+
+section .content .menu ul li a:hover {
+    color: white;
+}
+
+section .content .menu ul li a.active::after {
+    content: "";
+    height: 2px;
+    width: 40px;
+    background-color: #94dd25;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 section h2 {
     margin: 20px 0px;
 }
@@ -245,6 +281,7 @@ footer {
     background-color: #282828 ;
     color: white;
     font-size: 10px;
+    z-index: 999;
 }
 
 footer img {
@@ -259,19 +296,18 @@ footer .col {
 
 footer .left , footer .right {
     width: 20%;
+    min-width: 100px;
+    max-width: 200px;
 }
 
 footer .center {
     width: 40%;
 }
 
-footer .center .up , footer .center .down {
-    padding: 10px;
-}
-
 footer .center .up {
     width: 100%;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 footer .row-time {
@@ -311,6 +347,10 @@ footer .row-volume {
         color: white;
     }
 
+    .container-hr {
+        border-bottom: 1px solid #808080;
+    }
+
     aside .nav .logo .mobile{
         display: none;
     }
@@ -339,6 +379,10 @@ footer .row-volume {
 
     footer .row-time {
         width: 130px;
+    }
+
+    footer i {
+        font-size: 15px;
     }
     
 }
