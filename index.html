@@ -13,65 +13,70 @@
 
     <main class="flex" >
 
-        <aside class="flex-space-btw" >
+        <aside class="flex column flex-space-btw" >
             <div class="nav flex column nav-up" >
                 <div class="nav space logo flex center-Y" >
                     <div class="container-logo" >
-                        <img  class="mobile" src="img/logo-small.svg" alt=""> 
-                        <img  class="desk" src="img/logo.svg" alt="">             
+                        <a href="#"><img  class="mobile" src="img/logo-small.svg" alt=""></a>
+                        <a href="#"><img  class="desk" src="img/logo.svg" alt=""></a>
+                                     
                     </div>    
                 </div>
     
                 <div class="nav space nav-1 flex center-Y column" >
                     <div class="container flex center-Y" >
                         <img class="container-icon active" src="img/home.svg" alt=""> 
-                        <div class="desk grey margin-L" >
-                            Home
+                        <div class="desk margin-L" >
+                            <a class="grey" href="#">Home</a>
                         </div>              
                     </div>
                     <div class="container flex center-Y" >
                         <img class="container-icon" src="img/search.svg" alt=""> 
-                        <div class="desk grey margin-L" >
-                            Cerca
+                        <div class="desk margin-L" >
+                            <a class="grey" href="#">Cerca</a>
                         </div>             
                     </div>
                     <div class="container flex center-Y" >
                         <img class="container-icon" src="img/libreria.svg" alt="">
-                        <div class="desk grey margin-L" >
-                            La tua libreria
+                        <div class="desk margin-L" >
+                            <a class="grey" href="#">La tua libreria</a>
                         </div>               
                     </div>    
                 </div>
 
                 <div class="nav nav-2 space flex column" >
                     <h3>PLAYLIST</h3>
-                    <div class="flex center-Y space" >
-                        <div class="square" >+</div>
-                        <div class="grey" >Crea Playlist</div>
+                    <div class="flex space" >
+                        <a class="flex grey center-Y" href="#">
+                            <div class="square" >+</div>
+                            <div>Crea Playlist</div>
+                        </a>    
                     </div>
-                    <ul class="scroll" >
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                    </ul>
+                    <div>
+                        <ul class="scroll" >
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                        </ul>
+                    </div>    
                 </div>
             </div>
 
@@ -79,15 +84,16 @@
                     <div class="container container-hr flex center-Y" >
                         <img class="container-icon" src="img/download.svg" alt="">
                         <div class="desk grey margin-L" >
-                            Installa app
+                            <a class="grey" href="#">Installa app</a>
+                            
                         </div>              
                     </div>
                 <div class="flex center-Y space" >
                     <div class="container-icon circle" >
                         <img src="img/profile.svg" alt="">                    
                     </div>
-                    <div class="desk white margin-L" >
-                        John Doe
+                    <div class="desk margin-L" >
+                        <a class="white" href="#">John Doe</a>
                     </div>
                 </div>
 
@@ -133,43 +139,73 @@
                 </div>
                 <div class="flex wrap" >
                     <div class="item flex column center-Y" >
-                            <img src="img/metal_lifting.jpg" alt="song">                        
+                        <div class="container-cover" >
+                            <img src="img/metal_lifting.jpg" alt="song">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div>                       
                         <div class="description" >
                             <h3 class="song-title" >Heavy Metal</h3>
                             <span class="artist" >Subtitle</span>   
                         </div>
                     </div>
                     <div class="item flex column center-Y" >
-                        <img src="img/stranger.jpeg" alt="">   
+                        <div class="container-cover" >
+                            <img src="img/stranger.jpeg" alt="">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div>   
                         <div class="description" >
                             <h3 class="song-title" >Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                             <span class="artist" >Kyle Dixon & Michael Stein</span>
                         </div>                 
                     </div>
                     <div class="item flex column center-Y" >
-                        <img src="img/aquietplace.jpeg" alt="">  
+                        <div class="container-cover" >
+                            <img src="img/aquietplace.jpeg" alt="">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div>  
                         <div class="description" >
                             <h3 class="song-title" >A quiet place</h3>
                             <span class="artist" >Subtitle</span>    
                         </div>                      
                     </div>
                     <div class="item flex column center-Y" >
-                        <img src="img/split.jpeg" alt="">  
+                        <div class="container-cover" >
+                            <img src="img/split.jpeg" alt="">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div>                          
                         <div class="description" >
                             <h3 class="song-title" >Split</h3>
                             <span class="artist" >Subtitle</span>    
                         </div>                      
                     </div>
-                    <div class="item flex column center-Y" >
-                        <img src="img/cure.jpeg" alt="">
+                    <div class="item flex column center-Y" >                        
+                        <div class="container-cover" >
+                            <img src="img/cure.jpeg" alt="">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div> 
                         <div class="description" >
                             <h3 class="song-title" >A cure for Wellness</h3>
                             <span class="artist" >Subtitle</span>    
                         </div>
 
                     </div>
-                    <div class="item flex column center-Y" >
-                        <img src="img/sinister.jpeg" alt="">
+                    <div class="item flex column center-Y" >                        
+                        <div class="container-cover" >
+                            <img src="img/sinister.jpeg" alt="">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div> 
                         <div class="description" >
                             <h3 class="song-title" >Sinister</h3>
                             <span class="artist" >Subtitle</span>    
@@ -183,14 +219,22 @@
                     <span class="grey" >Più ascolti, più accurati saranno i suggerimenti</span>
                 </div>
                 <div class="flex wrap" >
-                    <div class="item flex column center-Y" >
-                        <img src="img/radar.jpeg" alt="">
-                        
+                    <div class="item flex column center-Y" >                        
+                        <div class="container-cover" >
+                            <img src="img/radar.jpeg" alt="">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div>                        
                         <h3 class="song-title" >Release Radar</h3>    
                     </div>
-                    <div class="item flex column center-Y" >
-                        <img src="img/mixdaily.jpeg" alt="">
-
+                    <div class="item flex column center-Y" >                        
+                        <div class="container-cover" >
+                            <img src="img/mixdaily.jpeg" alt="">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div>
                         <h3 class="song-title" >Daily Mix 1</h3>    
                     </div>
 
@@ -201,14 +245,22 @@
                     <span class="grey" >Più ascolti, più accurati saranno i suggerimenti</span>
                 </div>
                 <div class="flex wrap" >
-                    <div class="item flex column center-Y around" >
-                        <img src="img/youg.jpeg" alt="">
-
+                    <div class="item flex column center-Y around" >                        
+                        <div class="container-cover" >
+                            <img src="img/youg.jpeg" alt="">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div>
                         <h3 class="song-title description" >Lana Del Ray</h3>    
                     </div>
-                    <div class="item flex column center-Y around" >
-                        <img src="img/einaudi.jpeg" alt="">
-
+                    <div class="item flex column center-Y around" >                        
+                        <div class="container-cover" >
+                            <img src="img/einaudi.jpeg" alt="">
+                            <div class="overlay" >
+                                <a class="white" href="#"><i class="far fa-play-circle"></i></a>
+                            </div>
+                        </div>
                         <h3 class="song-title description" >Ludovico Einaudi</h3>    
                     </div>
 

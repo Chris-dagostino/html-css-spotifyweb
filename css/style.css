@@ -49,10 +49,12 @@ main{
 
 .grey {
     color: grey;
+    text-decoration: none;
 }
 
 .white {
     color: white;
+    text-decoration: none;
 }
 
 .desk {
@@ -143,6 +145,14 @@ aside .nav-2 li a:hover{
     color: white;
 }
 
+aside .nav-2 .flex a:hover{
+    color: white;
+}
+
+aside a:hover{
+    color: white;
+}
+
 .square {
     width: 30px;
     height: 30px;
@@ -156,10 +166,6 @@ aside .nav-2 li a:hover{
 
 aside img {
     color: grey
-}
-
-.container-icon .hr img {
-    margin-right: ;
 }
 
 .circle {
@@ -251,6 +257,28 @@ section h2 {
     margin: 10px 10px 10px 0px;
 } 
 
+.container-cover {
+    position: relative;
+}
+
+.item .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    opacity: 0;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
 section .description {
     text-align:center
 }
@@ -323,7 +351,7 @@ footer .row-volume {
 }
 
 footer a i{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
