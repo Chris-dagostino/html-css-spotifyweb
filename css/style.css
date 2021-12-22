@@ -285,23 +285,18 @@ footer {
 }
 
 footer img {
-    width: 25px;
-    height: 25px;
+    height: 40px;
     object-fit: contain;
 }
 
-footer .col {
-    margin-right: 8px;
+footer .col-center {
+    display: none;
 }
 
 footer .left , footer .right {
-    width: 20%;
+    width: 30%;
     min-width: 100px;
     max-width: 200px;
-}
-
-footer .center {
-    width: 40%;
 }
 
 footer .center .up {
@@ -313,18 +308,22 @@ footer .center .up {
 footer .row-time {
     width: 90px;
     height: 5px;
-    background-color: aqua;
+    background-color: grey;
     border-radius: 25px;
     margin: 0px 5px;
 }
 
 footer .row-volume {
-    width: 30px;
+    width: 40px;
     height: 5px;
-    background-color: aqua;
+    background-color: grey;
     border-radius: 25px;
     padding: 2px;
     margin-left: 3px;
+}
+
+footer a i{
+    font-size: 20px;
 }
 
 
@@ -369,8 +368,7 @@ footer .row-volume {
     }
     
     footer img {
-        width: 30px;
-        height: 30px;
+        height: 40px;
     }
 
     footer .center .up {
@@ -381,8 +379,12 @@ footer .row-volume {
         width: 130px;
     }
 
-    footer i {
+    footer a i{
         font-size: 15px;
+    }
+
+    footer .col-center {
+        display: block;
     }
     
 }
